@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----------Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="{% static 'images/favicon1.jpg' %}" type="images/x-icon">
+    <title>Responsive Personal Portfolio Website Design | Hansel</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <!------HEADER DESIGN--------->
+    <header class="header">
+        <div class="wrapper">
+            <svg>
+                <text x="30%" y="50%" dy=".25em" text-anchor="middle">
+                    Portfolio
+                </text>
+            </svg>
+        </div>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'service' %}">Services</a>
+            <a href="{% url 'portfolio' %}">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-------Block Content-------->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-----------Footer Design--------------->
+    <footer  class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Hansel F. Ndemange | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home" title="Back-To-Top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!---------Scroll Reveal---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-------------Typed js--------------->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!----------Javascript link------------>
+    <script src="{% static 'home.js' %}"></script>
+</body>
+</html>

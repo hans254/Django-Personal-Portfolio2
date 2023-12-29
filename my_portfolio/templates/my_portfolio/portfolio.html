@@ -1,0 +1,23 @@
+{% extends 'my_portfolio/base.html' %}
+
+{% block content %}
+<!-- Your existing content here -->
+
+<section class="portfolio" id="portfolio">
+    
+    <div class="portfolio-items">
+        {% for item in portfolio_items %}
+            <div class="portfolio-item">
+                <img src="{{ item.image.url }}" alt="{{ item.title }}">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+
+                {% if item.url %}
+                <a href="{{ item.link }}" target="_blank">View Details</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

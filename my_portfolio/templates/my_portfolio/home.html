@@ -1,0 +1,191 @@
+{% extends 'my_portfolio/base.html' %}
+{% block content %}
+
+{% load static %}
+    <!-------HOME SECTION DESIGN-------->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Hansel Ndemange</h1>
+            <h3>And I'm a <span class="multiple-text"></span> </h3>
+            <p>I'm a Web Designer/software developer with extensive expirience of close to 10 years. 
+                My aim is to offer quality services to clients to their satisfaction by creating for them a lucrative websites
+                 and building Applications, graphic designs, UI/UX designs and many more...</p>
+            <div class="social-media">
+                <a href="#" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/home?lang=en" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/hans254" title="Github"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/feed/" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="{% static 'images/6. Morning Star.pdf' %}" class="btn">Download CV</a>
+            <a href="#" class="btn">Sign In</a>
+        </div>
+
+        <div class="home-img">
+            <img src="{% static 'images/home.png' %}" alt="">
+        </div>
+
+    </section>
+
+    <!---------About Section Design----------->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'images/home.png' %}" alt="">
+        </div>
+        
+          <div class="about-content">
+            <h2 class="heading">About <span>Me</span> </h2>
+            <h3>Software Developer!</h3>
+            <p> Hello, am Hansel Ndemange. 
+                <br>
+                <br>
+                A Computer Science degree holder from University of Kabianga.<br>
+                Currently working as a fullstack developer at Turing having close to 10years of expirience.
+                <br>
+                <br>
+                To me working at Turing has become a dream come true job as it is so flexible and the working condition is so conducive. <br>
+                This enables me to manage other activites such as business and family matters with alot of ease.
+                I first heard of Turing from an uncle of mine who's an IT guy in a goverment institution, 
+                who later convinced me to work hard so that I can secure a place as a developer at Turing. 
+                I started doing some research about this thing so called Turing which I have never heard of it before. 
+                Cause remember I wasn't told more about the organization. That made me to do some research about it and went on to convince myself, 
+                that this is where I belong and I would like to work for this organization when I will be out of school.
+            </p>
+                 <a href="#" class="btn">Read More</a>
+                 <a href="{% url 'about' %}" class="btn">Visit Page</a>
+          </div>
+    </section>
+ 
+    <!------Services Section Design--------->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, blanditiis. Maiores a consectetur 
+                    perspiciatis sapiente laborum amet facere praesentium asperiores.</p>
+
+                    <a href="#" class="btn">Read More</a>
+
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, blanditiis. Maiores a consectetur 
+                    perspiciatis sapiente laborum amet facere praesentium asperiores.</p>
+
+                    <a href="#" class="btn">Read More</a>
+
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, blanditiis. Maiores a consectetur 
+                    perspiciatis sapiente laborum amet facere praesentium asperiores.</p>
+
+                    <a href="#" class="btn">Read More</a>
+
+            </div>
+        </div>
+
+        <div class="see-more">
+            <a href="{% url 'service' %}">Click To See More</a>
+        </div>
+    </section>
+
+    <!-------Portfolio Section Design-------->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio1.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio2.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio3.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio4.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio5.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'images/portfolio6.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, asperiores.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="see-more">
+            <a href="{% url 'portfolio' %}">Click To See More</a>
+        </div>
+        
+    </section>
+    
+    
+    <!----------Contact Section Design------------->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" onclick="this.innerHTML = Date()">
+        </form>
+
+        
+    </section>
+
+
+
+{% endblock %}
